@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxdwjagbmby5w"]
+
+[ext_resource type="Script" path="res://interface/menus/PauseMenu.gd" id="1_06iqt"]
+[ext_resource type="Theme" path="res://interface/default.theme" id="1_jofeu"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+process_mode = 2
+script = ExtResource("1_06iqt")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1296.0
+offset_top = -648.0
+offset_right = 1310.0
+offset_bottom = 723.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.180392, 0.180392, 0.180392, 0.164706)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -147.0
+offset_top = 121.0
+offset_right = -77.0
+offset_bottom = 144.0
+grow_horizontal = 2
+scale = Vector2(5, 5)
+text = "Paused"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -118.0
+offset_top = -182.5
+offset_right = -53.0
+offset_bottom = -116.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4, 4)
+
+[node name="Continue" type="Button" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_jofeu")
+text = "Continue"
+
+[node name="Quit" type="Button" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_jofeu")
+text = "Quit"

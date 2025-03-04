@@ -1,0 +1,32 @@
+[gd_scene load_steps=8 format=3 uid="uid://cqq4qtisa55o1"]
+
+[ext_resource type="PackedScene" uid="uid://cdmy1ndbyegmo" path="res://animation/BattlerAnim.tscn" id="1_i1mgb"]
+[ext_resource type="Texture2D" uid="uid://bpvqle0yih3wq" path="res://assets/sprites/battlers/shadow.png" id="2_j22hv"]
+[ext_resource type="Texture2D" uid="uid://dcp7gv5gkgrcf" path="res://assets/sprites/battlers/Battlers/Battlers/World04_003_ Outlaw.png" id="3_kup1q"]
+[ext_resource type="Animation" path="res://animation/attack.anim" id="4_h26gl"]
+[ext_resource type="Animation" path="res://animation/death.anim" id="5_6r4h2"]
+[ext_resource type="Animation" path="res://animation/take_damage.anim" id="6_dqgfj"]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0errt"]
+_data = {
+"attack": ExtResource("4_h26gl"),
+"death": ExtResource("5_6r4h2"),
+"take_damage": ExtResource("6_dqgfj")
+}
+
+[node name="PorcupineAnim" instance=ExtResource("1_i1mgb")]
+
+[node name="shadow" type="Sprite2D" parent="." index="0"]
+position = Vector2(-2.18341, -7.19193)
+scale = Vector2(0.944015, 0.77886)
+texture = ExtResource("2_j22hv")
+
+[node name="body" type="Sprite2D" parent="." index="1"]
+position = Vector2(-9, -73)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_kup1q")
+
+[node name="AnimationPlayer" parent="." index="2"]
+libraries = {
+"": SubResource("AnimationLibrary_0errt")
+}

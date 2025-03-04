@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ct6u108xq3ufy"]
+
+[ext_resource type="Texture2D" uid="uid://b2qcm25jl2y50" path="res://assets/sprites/stone_platform.png" id="1"]
+
+[node name="StonePlatform" type="Marker2D"]
+
+[node name="sprite" type="Sprite2D" parent="."]
+position = Vector2(0, 43)
+texture = ExtResource("1")

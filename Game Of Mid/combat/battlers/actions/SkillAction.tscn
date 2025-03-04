@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmiheyfjvfkfg"]
+
+[ext_resource type="Script" path="res://combat/battlers/actions/SkillAction.gd" id="1"]
+
+[node name="SkillAction" type="Node"]
+script = ExtResource("1")

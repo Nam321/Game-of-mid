@@ -1,0 +1,18 @@
+[gd_scene load_steps=6 format=3 uid="uid://l0fo5xge4si7"]
+
+[ext_resource type="PackedScene" uid="uid://wrg8lv160a2t" path="res://combat/battlers/Battler.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://buxkee2k8ki86" path="res://animation/BlueAnim.tscn" id="2"]
+[ext_resource type="Resource" uid="uid://xy6ce27gomfv" path="res://combat/battlers/jobs/Fighter.tres" id="3"]
+[ext_resource type="Resource" path="res://combat/battlers/skills/Slash.tres" id="4"]
+[ext_resource type="Resource" uid="uid://hcugaq4rb4m6" path="res://combat/battlers/skills/MagnumBreak.tres" id="5_5o1d5"]
+
+[node name="Blue" instance=ExtResource("1")]
+
+[node name="BlueAnim" parent="Skin" index="0" instance=ExtResource("2")]
+
+[node name="Job" parent="." index="1"]
+starting_stats = ExtResource("3")
+starting_skills = [ExtResource("4"), ExtResource("5_5o1d5")]
+
+[node name="InterfaceAnchor" parent="." index="3"]
+position = Vector2(0, 61.8831)

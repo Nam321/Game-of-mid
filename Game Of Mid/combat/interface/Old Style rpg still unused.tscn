@@ -1,0 +1,80 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4srsuxhrjywn"]
+
+[ext_resource type="Theme" path="res://interface/default.theme" id="1_86yws"]
+
+[node name="CombatInterface" type="CanvasLayer"]
+layer = 100
+
+[node name="OldSchoolUI" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -186.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_86yws")
+
+[node name="Row" type="HBoxContainer" parent="OldSchoolUI"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MonstersPanel" type="Panel" parent="OldSchoolUI/Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Column" type="VBoxContainer" parent="OldSchoolUI/Row/MonstersPanel"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+
+[node name="MonsterWidget" type="HBoxContainer" parent="OldSchoolUI/Row/MonstersPanel/Column"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="OldSchoolUI/Row/MonstersPanel/Column/MonsterWidget"]
+layout_mode = 2
+text = "Porcupine"
+
+[node name="Life" type="Label" parent="OldSchoolUI/Row/MonstersPanel/Column/MonsterWidget"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "85/120"
+horizontal_alignment = 2
+
+[node name="MonsterWidget2" type="HBoxContainer" parent="OldSchoolUI/Row/MonstersPanel/Column"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="OldSchoolUI/Row/MonstersPanel/Column/MonsterWidget2"]
+layout_mode = 2
+text = "Monster Name"
+
+[node name="Life" type="Label" parent="OldSchoolUI/Row/MonstersPanel/Column/MonsterWidget2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "85/120"
+horizontal_alignment = 2
+
+[node name="PartyPanel" type="Panel" parent="OldSchoolUI/Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Column" type="VBoxContainer" parent="OldSchoolUI/Row/PartyPanel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Control" type="Control" parent="OldSchoolUI/Row/PartyPanel/Column"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator" type="HSeparator" parent="OldSchoolUI/Row/PartyPanel/Column"]
+layout_mode = 2
+size_flags_horizontal = 3

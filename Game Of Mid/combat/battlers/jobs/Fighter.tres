@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="StartingStats" load_steps=2 format=3 uid="uid://xy6ce27gomfv"]
+
+[ext_resource type="Script" path="res://combat/battlers/jobs/StartingStats.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+job_name = "Fighter"
+max_health = 100
+max_mana = 4
+strength = 25
+defense = 1
+speed = 5

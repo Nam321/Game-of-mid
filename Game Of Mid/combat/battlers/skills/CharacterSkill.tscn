@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://di6vwy4158i8t"]
+
+[ext_resource type="Script" path="res://combat/battlers/skills/CharacterSkill.gd" id="1"]
+
+[node name="CharacterSkill" type="Node"]
+script = ExtResource("1")

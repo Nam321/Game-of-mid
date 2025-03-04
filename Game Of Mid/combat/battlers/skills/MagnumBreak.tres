@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://hcugaq4rb4m6"]
+
+[ext_resource type="Script" path="res://combat/battlers/skills/Skill.gd" id="1_h81ve"]
+
+[resource]
+script = ExtResource("1_h81ve")
+skill_name = "Magnum Break"
+skill_description = "mango"
+base_damage = 10
+success_chance = 0.1

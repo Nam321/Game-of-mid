@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://bi45yj1sm68lg"]
+
+[node name="Timeline" type="HBoxContainer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -244.0
+offset_top = -290.0
+offset_right = 16.0
+offset_bottom = -250.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.8, 1.953)
+
+[node name="TimelineSlot" type="Panel" parent="."]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="TimelineSlot"]
+layout_mode = 0
+offset_left = -2.0
+offset_right = 25.0
+offset_bottom = 26.0
+scale = Vector2(1.5, 1.5)
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TimelineSlot2" type="Panel" parent="."]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="TimelineSlot2"]
+layout_mode = 0
+offset_right = 26.0
+offset_bottom = 26.0
+scale = Vector2(1.5, 1.5)
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TimelineSlot3" type="Panel" parent="."]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="TimelineSlot3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 41.0
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TimelineSlot4" type="Panel" parent="."]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="TimelineSlot4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TimelineSlot5" type="Panel" parent="."]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="TimelineSlot5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TimelineSlot6" type="Panel" parent="."]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="TimelineSlot6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+stretch_mode = 4

@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://cdmy1ndbyegmo"]
+
+[ext_resource type="Script" path="res://animation/BattlerAnim.gd" id="1"]
+[ext_resource type="Animation" path="res://animation/attack.anim" id="2"]
+[ext_resource type="Animation" path="res://animation/death.anim" id="3"]
+[ext_resource type="Animation" path="res://animation/take_damage.anim" id="4"]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_35l5m"]
+_data = {
+"attack": ExtResource("2"),
+"death": ExtResource("3"),
+"take_damage": ExtResource("4")
+}
+
+[node name="BattlerAnim" type="Marker2D"]
+script = ExtResource("1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_35l5m")
+}

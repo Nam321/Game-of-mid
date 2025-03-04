@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://ba2dm5fxgt50i"]
+
+[node name="InterfaceAnchor" type="RemoteTransform2D"]
+update_rotation = false
+update_scale = false

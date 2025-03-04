@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Skill" load_steps=2 format=3 uid="uid://5ta4g35tefpu"]
+
+[ext_resource type="Script" path="res://combat/battlers/skills/Skill.gd" id="1_cjjrk"]
+
+[resource]
+script = ExtResource("1_cjjrk")
+skill_name = "Skill"
+skill_description = "test if monster can use skill"
+base_damage = 40
+success_chance = 0.4

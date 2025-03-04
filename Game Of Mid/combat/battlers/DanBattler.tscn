@@ -1,0 +1,27 @@
+[gd_scene load_steps=7 format=3 uid="uid://3c05oc51ap55"]
+
+[ext_resource type="PackedScene" uid="uid://wrg8lv160a2t" path="res://combat/battlers/Battler.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://xflgdl6vt0lx" path="res://animation/DanAnim.tscn" id="2"]
+[ext_resource type="Resource" uid="uid://xy6ce27gomfv" path="res://combat/battlers/jobs/Fighter.tres" id="3"]
+[ext_resource type="Resource" path="res://combat/battlers/skills/Slash.tres" id="4"]
+
+[sub_resource type="Shader" id="1"]
+code = "shader_type canvas_item;
+
+
+"
+
+[sub_resource type="ShaderMaterial" id="2"]
+shader = SubResource("1")
+
+[node name="Dan" instance=ExtResource("1")]
+material = SubResource("2")
+
+[node name="DanAnim" parent="Skin" index="0" instance=ExtResource("2")]
+
+[node name="Job" parent="." index="1"]
+starting_stats = ExtResource("3")
+starting_skills = [ExtResource("4")]
+
+[node name="InterfaceAnchor" parent="." index="3"]
+position = Vector2(0, 60.5757)

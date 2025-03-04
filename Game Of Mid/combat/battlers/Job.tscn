@@ -1,0 +1,16 @@
+[gd_scene load_steps=6 format=3 uid="uid://c02cot4umr2nn"]
+
+[ext_resource type="Script" path="res://combat/battlers/Job.gd" id="1"]
+[ext_resource type="Resource" uid="uid://xy6ce27gomfv" path="res://combat/battlers/jobs/Fighter.tres" id="2"]
+[ext_resource type="PackedScene" uid="uid://di6vwy4158i8t" path="res://combat/battlers/skills/CharacterSkill.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://b6db4xkxt72bg" path="res://combat/battlers/stats/Stats.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://cehfv8a71ttss" path="res://combat/battlers/skills/Skills.tscn" id="5"]
+
+[node name="Job" type="Node"]
+script = ExtResource("1")
+starting_stats = ExtResource("2")
+character_skill_scene = ExtResource("3")
+
+[node name="Stats" parent="." instance=ExtResource("4")]
+
+[node name="Skills" parent="." instance=ExtResource("5")]

@@ -1,0 +1,31 @@
+[gd_scene load_steps=8 format=3 uid="uid://xflgdl6vt0lx"]
+
+[ext_resource type="PackedScene" uid="uid://cdmy1ndbyegmo" path="res://animation/BattlerAnim.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://bpvqle0yih3wq" path="res://assets/sprites/battlers/shadow.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dab4ujd27ri5y" path="res://assets/sprites/battlers/Ready_00.png" id="3_8lkq8"]
+[ext_resource type="Animation" path="res://animation/attack.anim" id="4_8la0c"]
+[ext_resource type="Animation" path="res://animation/death.anim" id="5_y73ha"]
+[ext_resource type="Animation" path="res://animation/take_damage.anim" id="6_n2hm6"]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qc4mu"]
+_data = {
+"attack": ExtResource("4_8la0c"),
+"death": ExtResource("5_y73ha"),
+"take_damage": ExtResource("6_n2hm6")
+}
+
+[node name="DanAnim" instance=ExtResource("1")]
+
+[node name="shadow" type="Sprite2D" parent="." index="0"]
+position = Vector2(0, -1)
+texture = ExtResource("2")
+
+[node name="body" type="Sprite2D" parent="." index="1"]
+position = Vector2(0, -60)
+scale = Vector2(4, 4)
+texture = ExtResource("3_8lkq8")
+
+[node name="AnimationPlayer" parent="." index="2"]
+libraries = {
+"": SubResource("AnimationLibrary_qc4mu")
+}
